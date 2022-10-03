@@ -1,0 +1,9 @@
+{
+  "private": "true",
+  "scripts": {
+    "watch": "nerest watch"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
