@@ -1,5 +1,5 @@
 {
-  "private": "true",
+  "private": true,
   "scripts": {
     "watch": "nerest watch"
   },

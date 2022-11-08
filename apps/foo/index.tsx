@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function Foo() {
-  return <div>Hello from Nerest micro frontend</div>;
+type Props = {
+  greeting: string;
+};
+
+export default function Foo({ greeting = 'Hello' }: Props) {
+  return <div>{greeting} from Nerest micro frontend</div>;
 }
