@@ -5,5 +5,5 @@ type Props = {
 };
 
 export default function Bar({ greeting = 'Hello' }: Props) {
-  return <div>{greeting} from the Bar app</div>;
+  return <div>{greeting} to the Bar app</div>;
 }
