@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// TODO: get a tsconfig or module definitions from nerest
 import S from './index.module.css';
 
 type Props = {
