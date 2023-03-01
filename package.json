@@ -1,5 +1,11 @@
 {
   "private": true,
+  "name": "nerest-harness",
+  "description": "An example of a minimal Nerest micro frontend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerestjs/harness.git"
+  },
   "scripts": {
     "watch": "nerest watch"
   },
