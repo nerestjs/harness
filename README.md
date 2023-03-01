@@ -9,6 +9,8 @@ npm install
 npm run watch
 ```
 
+View Swagger UI at http://localhost:3000/api
+
 View example routes at:
 
 - http://localhost:3000/api/foo/examples/welcome
