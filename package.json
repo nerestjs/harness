@@ -7,6 +7,7 @@
     "url": "https://github.com/nerestjs/harness.git"
   },
   "scripts": {
+    "build": "nerest build",
     "watch": "nerest watch"
   },
   "dependencies": {
