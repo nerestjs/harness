@@ -1,6 +1,6 @@
 {
-  "private": true,
   "name": "nerest-harness",
+  "private": true,
   "description": "An example of a minimal Nerest micro frontend",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "nerest build",
+    "prepare": "relative-deps",
     "watch": "nerest watch"
   },
   "dependencies": {
@@ -17,6 +18,10 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11"
+    "@types/react-dom": "^18.0.11",
+    "relative-deps": "^1.0.7"
+  },
+  "relativeDependencies": {
+    "@nerest/nerest": "../nerest"
   }
 }

@@ -22,7 +22,7 @@ See sample POST requests with custom bodies in [requests.http](requests.http)
 
 To use this micro frontend as a harness for local `@nerest/nerest` framework development, follow the Development section of the nerest readme file. Then link the local nerest into the current project.
 
-**IMPORTANT:** `react` and `react-dom` MUST be linked together with the framework itself. Otherwise react will fail to work due to two versions of the library being present in the project at the same time.
+[`relative-deps`](https://www.npmjs.com/package/relative-deps) is used instead of `npm link` because native npm linking breaks some peer and transitive dependencies like react, react-dom, @fastify/swagger-ui, etc. Relative deps runs automatically after every `npm install` as long as there is a `nerest` directory next to the `nerest-harness` directory:
 
 ```
 # Download the nerest framework and harness
@@ -36,7 +36,7 @@ npm run build
 
 # Link the local framework into the harness
 cd ../nerest-harness
-npm link ../nerest ../nerest/node_modules/react ../nerest/node_modules/react-dom
+npm install
 
 # Run the harness with the local framework version
 npm run watch
